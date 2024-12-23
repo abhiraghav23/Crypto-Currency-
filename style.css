@@ -1,0 +1,91 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: black;
+  margin: 0;
+  padding: 20px;
+  color: white;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color:#0000;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  
+}
+
+input {
+  padding: 10px;
+  width: 200px;
+  margin: 10px 0;
+}
+
+button {
+  padding: 10px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table, th, td {
+  border: 1px solid rgb(104, 101, 101);
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #0000;
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 16px;
+  transform: translateY(100%);  
+  animation: slideUp 1s ease-out forwards, colorChange 3s infinite alternate;
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0); 
+  }
+}
+
+@keyframes colorChange {
+  0% {
+    background-color: #333;
+  }
+  50% {
+    background-color: #444; 
+  }
+  100% {
+    background-color: #333;
+  }
+}
+
+footer:hover {
+  background-color: #555;
+  transition: background-color 0.3s ease;
+}
+
